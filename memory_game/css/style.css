@@ -93,3 +93,10 @@ a:hover {
 /* Your styles here */
 	border-color: white;
 }
+.board{
+	height: auto;
+	overflow: hidden;
+}
+#reset{
+	margin: 30px auto;
+}
