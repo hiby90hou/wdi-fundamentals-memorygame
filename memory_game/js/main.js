@@ -49,7 +49,7 @@ var checkForMatch = function(){
 			//set all of cards' images to back side
 			var imgCard = document.getElementById("game-board").children;
 			for(var i=0;i<imgCard.length;i++){
-				imgCard[i].setAttribute('src', 'images/card.jpg');
+				imgCard[i].setAttribute('src', 'images/back.png');
 			}	
 		}
 
@@ -76,7 +76,7 @@ var resetAll = function(){
 	//reset card image
 	var imgCard = document.getElementById("game-board").children;
 	for(var i=0;i<imgCard.length;i++){
-		imgCard[i].setAttribute('src', 'images/card.jpg');
+		imgCard[i].setAttribute('src', 'images/back.png');
 	}
 
 	//random cards orders
@@ -96,7 +96,7 @@ var createBoard = function(){
 	for (var i = 0; i < cards.length; i++) {
 		var cardElement = document.createElement('img');
 
-		cardElement.setAttribute('src', 'images/card.jpg');
+		cardElement.setAttribute('src', 'images/back.png');
 		cardElement.setAttribute('data-id', i);
 
 		cardElement.addEventListener("click",function(){flipCard(this)});
