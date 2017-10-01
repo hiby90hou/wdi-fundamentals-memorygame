@@ -44,6 +44,7 @@ var checkForMatch = function(){
 		} else {
 		alert("Sorry, try again.");
 		var imgCard = document.getElementById("game-board").children;
+
 		for(var i=0;i<imgCard.length;i++){
 			imgCard[i].setAttribute('src', 'images/card.jpg');
 		}
@@ -63,7 +64,7 @@ var flipCard = function(imgCard){
 	
 	cardsInPlay.push(cards[cardId].rank);
 
-	checkForMatch();
+	var t=setTimeout(checkForMatch,500);
 	
 }
 
